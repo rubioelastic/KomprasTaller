@@ -46,14 +46,6 @@ El correo generado incluye al final una línea con todos los datos en formato JS
 DATOS_JSON::{"solicitante":"...","fecha":"...","numPedido":"...","area":"...","urgencia":"...","items":[...],"observaciones":"..."}
 ```
  
-### Flujo recomendado en Power Automate
- 
-```
-Trigger: Llega correo a compras@tuempresa.com
- └─ Extraer cuerpo del correo
-     └─ Parse JSON (línea DATOS_JSON::)
-         └─ Crear elemento en Microsoft Lists
-```
  
 ### Campos mapeados a Lists
  
